@@ -7,16 +7,18 @@
 <h1 align="center">nl2sh</h1>
 
 <p align="center">
-  A safe, Android-native natural-language shell agent, built as a single Rust executable with a rich terminal UI.
+  An Android-native AI shell agent with a Rust TUI, embedded Web workspace, and local safety approvals.
 </p>
 
-nl2sh turns natural-language tasks into shell operations for stock Android `adb shell` and Termux. Every model-proposed command must pass the local `LLM → Security → Confirmation → Execution` boundary before it can run.
+nl2sh turns natural-language tasks into device actions for stock Android `adb shell` and Termux. The Android runtime is a single Rust executable with a terminal UI, browser sessions, and bounded built-in tools. Actions pass local risk assessment and require confirmation when the operation warrants it.
 
-nl2sh 将自然语言任务转换为 Android shell 操作，以原生 `adb shell` 为一等运行环境并兼容 Termux。模型提出的每条命令都必须经过本地 `LLM → Security → Confirmation → Execution` 安全链。
+nl2sh 将自然语言任务转换为 Android 设备操作，以原生 `adb shell` 为一等运行环境并兼容 Termux。单个 Rust 可执行文件内置终端界面、Web 多会话和有界工具；命令及其他操作均经过本地风险评估与确认。
 
 - Android API 26+; AArch64 and ARMv7 release builds
-- Stable Rust, ratatui/crossterm TUI, multi-round Tool Calling
+- Stable Rust, ratatui/crossterm TUI, embedded Web UI, multi-round Tool Calling
+- Structured file, Android diagnostics, UI, network, audio, and chart tools
+- Optional host-side A2A 1.0 gateway and stdio MCP adapter for device inspection and Agent consultation
 - Explicit confirmation for mutations and strong confirmation for dangerous operations
-- Root access never bypasses risk classification or confirmation
+- Root and unattended A2A/MCP calls cannot bypass local risk classification or confirmation
 
-[Source & documentation](https://github.com/nl2sh/nl2sh) · [Releases](https://github.com/nl2sh/nl2sh/releases) · [Issues](https://github.com/nl2sh/nl2sh/issues) · [Discussions](https://github.com/nl2sh/nl2sh/discussions)
+[Source & documentation](https://github.com/nl2sh/nl2sh) · [A2A/MCP gateway](https://github.com/nl2sh/nl2sh/tree/master/a2a_gateway) · [Releases](https://github.com/nl2sh/nl2sh/releases) · [Issues](https://github.com/nl2sh/nl2sh/issues) · [Discussions](https://github.com/nl2sh/nl2sh/discussions)
