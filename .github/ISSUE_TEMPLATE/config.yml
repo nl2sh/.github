@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation / 使用文档
+    url: https://nl2sh.github.io/nl2sh/
+    about: Read the bilingual manual and troubleshooting guides / 查看双语手册与排障指南
+  - name: Usage discussion / 使用讨论
+    url: https://github.com/nl2sh/nl2sh/discussions
+    about: Ask usage questions in the main project / 在主项目讨论使用问题

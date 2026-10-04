@@ -1,0 +1,17 @@
+name: Feature request / 功能建议
+description: Describe a concrete use case / 描述具体使用场景
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Use case / 使用场景
+      description: "Which component and user task needs improvement? / 哪个组件与用户任务需要改进？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Desired behavior / 期望行为
+      description: "Expected result and relevant interface or approval requirements / 期望结果及相关接口或审批要求"
+    validations:
+      required: true

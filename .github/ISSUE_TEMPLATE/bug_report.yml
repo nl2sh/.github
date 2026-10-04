@@ -1,0 +1,25 @@
+name: Bug report / 问题报告
+description: Report a reproducible component failure / 报告可复现问题
+body:
+  - type: markdown
+    attributes:
+      value: "Use the affected component repository. Remove credentials and personal data before attaching logs. / 请在对应组件仓库反馈，附日志前去除凭据及个人数据。"
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment / 版本与环境
+      description: "Component revision, Android API/ABI, caller UID and transport/backend / 组件版本、Android API/ABI、调用 UID 及传输/后端"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and results / 步骤与结果
+      description: "Exact steps, expected and actual behavior; note uncertain action outcomes after timeout / 复现步骤、预期与实际行为，注明超时后操作是否可能已执行"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence / 脱敏证据
+      description: "Relevant error and checks already performed / 相关错误及已完成的检查"
